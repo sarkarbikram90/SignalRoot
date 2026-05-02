@@ -1,0 +1,19 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+scrape_configs:
+  - job_name: 'signalroot-gateway'
+    static_configs:
+      - targets: ['gateway:8080']
+    metrics_path: /metrics
+
+  - job_name: 'signalroot-api'
+    static_configs:
+      - targets: ['api:8081']
+    metrics_path: /metrics
+
+  - job_name: 'signalroot-ml'
+    static_configs:
+      - targets: ['ml:8082']
+    metrics_path: /metrics

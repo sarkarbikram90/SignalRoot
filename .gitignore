@@ -1,0 +1,49 @@
+# Binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+/gateway
+/api
+/worker
+
+# Go
+/vendor
+
+# Environment
+.env
+.env.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker volumes
+postgres_data/
+qdrant_data/
+grafana_data/
+
+# Node
+web/node_modules/
+web/dist/
+
+# Python
+ml/__pycache__/
+ml/*.pyc
+ml/.venv/
+ml/venv/
+
+# Coverage
+coverage/
+*.cover
+*.out
+
+# Logs
+*.log
