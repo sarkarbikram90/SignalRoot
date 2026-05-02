@@ -1,0 +1,2 @@
+# SignalRoot
+Incident Intelligence Platform
